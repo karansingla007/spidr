@@ -20,4 +20,4 @@ mongoDbLib.dbConnect().then((client) => {
   mongoDbLib.setMongoClient(client);
 })
 
-app.listen(5001, '13.127.33.237');
+app.listen(3000, '13.127.33.237');
