@@ -1,4 +1,5 @@
-const { uniqueUsernameGenerator, Config, generateUsername } = require('unique-username-generator');
+const { generateUsername } = require('unique-username-generator');
+const { v1: uuidv1, } = require('uuid');
 
 let generateRandomUserName = () => {
     // const spidrCharacters = [
@@ -18,6 +19,12 @@ let generateRandomUserName = () => {
     return username
   }
 
+  let generateUserId = () => {
+    var userId = uuidv1();
+    return userId;
+  }
+
   module.exports = {
     generateRandomUserName,
+    generateUserId
   }
